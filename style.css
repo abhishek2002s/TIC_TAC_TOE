@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+.wrapper{
+    background-color:#548687;
+    width: 100vw;
+    height: 103vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+p{
+    color: white;
+    position: absolute;
+    top:3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 0.5rem 3rem;
+}
+
+p:hover{
+    outline: 1px solid white;
+}
+
+.main-box{
+ display: grid;
+ padding: 2rem;
+ grid-template-columns:repeat(3,1fr);
+ aspect-ratio: 1/1;
+ margin-top: 2vw;
+width: 90%;
+max-width: 20rem;
+background-color: rgba(255, 255, 255, 0.15);
+border-radius: 1rem;
+border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.box{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1/1; 
+    /* for square shpe */
+    font-size: 3rem;
+    color: white;
+}
+
+.main-box:hover{
+    outline: 1px solid white;
+}
+
+.box1, .box2, .box4, .box5{
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+.box3, .box6{
+    border-bottom: 2px solid white;
+}
+
+.box7, .box8{
+    border-right: 2px solid white;
+}
+
+
+.btn{
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 1rem;
+    border: 1px solid  rgba(255, 255, 255, 0.25);
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 0.5rem 2rem;
+    display: none;
+}
+
+.btn:hover{
+    outline: 1px solid white;
+}
+
+.btn.active{
+    display: flex;
+}
+
+.win{
+    background-color: green;
+}
+
+span{
+    color: white;
+    position: absolute;
+    top:31.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 0.3rem 2rem;
+    display: none;
+    font-weight: 600;
+    /* display: flex/; */
+}
+
+span.active{
+    display: flex;
+}
